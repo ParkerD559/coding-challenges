@@ -1,0 +1,9 @@
+version: '3'
+services:
+  notebook:
+    image: jupyter/minimal-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./python:/home/jovyan/python
+      - ./javascript:/home/jovyan/javascript
